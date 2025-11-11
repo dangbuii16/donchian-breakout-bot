@@ -121,5 +121,40 @@ Metrics are computed via `metrics.py`:
 - The **backtest results for BTCUSD** and the **optimized parameters** are stored and visualized in the `btc_main.ipynb` file.  
 - The notebook includes equity & drawdown charts and trade distribution plots for both training and test periods.  
 
+## Optimization Result for BTC
 
-
+| Metric | Train | Test |
+|:--|--:|--:|
+| **Initial capital ($)** | 5,000 | 5,000 |
+| **Risk per trade ($)** | 150 | 150 |
+| **Start date** | 2018-03-01 00:00:00 | 2024-01-01 00:00:00 |
+| **End date** | 2023-12-01 00:00:00 | 2025-11-10 00:00:00 |
+| **Duration (days)** | 2101 | 679 |
+| **Trades** | 449 | 150 |
+| **Equity Final ($)** | 22,446.83 | 6,951.55 |
+| **Equity Peak ($)** | 23,754.90 | 7,693.39 |
+| **Net Profit ($)** | 17,446.83 | 1,951.55 |
+| **Return (%)** | 348.94 | 39.03 |
+| **Return (annual - %)** | 29.83 | 19.39 |
+| **Return (monthly - %)** | 2.20 | 1.49 |
+| **Sharpe ratio** | 0.896 | 0.553 |
+| **Sortino ratio** | 2.043 | 0.938 |
+| **Max DD (%)** | -16.42 | -27.46 |
+| **Avg DD (%)** | -5.21 | -10.26 |
+| **Max DD Duration (days)** | 840 | 346 |
+| **Avg DD Duration (days)** | 64.6 | 63.3 |
+| **Win rate (%)** | 32.29 | 36.00 |
+| **Best trade (%)** | 27.37 | 25.87 |
+| **Worst trade (%)** | -3.69 | -3.41 |
+| **Avg trade (%)** | 0.38 | 0.29 |
+| **Max trade duration (mins)** | 54,180.0 | 27,420.0 |
+| **Avg trade duration (mins)** | 6,522.09 | 6,090.8 |
+| **Profit factor** | 1.607 | 1.226 |
+| **Long trades winrate (%)** | 35.11 | 37.33 |
+| **Long trades profit ($)** | 16,965.24 | 2,762.47 |
+| **Short trades winrate (%)** | 29.46 | 34.67 |
+| **Short trades profit ($)** | 481.59 | -810.92 |
+| **Consecutive wins (count)** | 5 | 3 |
+| **Consecutive profit ($)** | 2,558.57 | 239.34 |
+| **Consecutive losses (count)** | 12 | 7 |
+| **Consecutive losses ($)** | -1,426.22 | -737.75 |

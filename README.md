@@ -1,4 +1,14 @@
 # Donchian Breakout Strategy
+## Project summary
+**Goals:**  
+This project developed a swing-trading strategy using the Donchian Channel on multi-asset MT5 data, applying quantitative analysis to optimize lookback parameters and validate performance on real historical data.
+
+**Process:**  
+- Collected H1 price data for XAUUSD, BTCUSD, USTEC, EURUSD, and USDJPY from MT5 covering Mar-2018 to Nov-2025.  
+- Built a full backtesting pipeline including signal generation, performance evaluation (PnL, drawdown, trade distribution), and visualizations for candle-based trade review.
+
+**Result:**  
+Strategy produced a right-skewed PnL profile with small frequent losses and occasional large gains, with strongest profitability on high-volatility assets (BTC, XAU).
 
 ## Hypothesis
 This project implements a **Donchian Channel Breakout** trading strategy, tested on MetaTrader 5 data.  

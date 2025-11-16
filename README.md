@@ -4,7 +4,7 @@
 This project implements a **Donchian Channel Breakout** trading strategy, tested on MetaTrader 5 data.  
 The system detects breakouts of price above or below the Donchian channel and executes trades according to two versions.
 
-### Version 1 — Basic Donchian Breakout
+### Version 1 - Basic Donchian Breakout
 - **Entry Conditions:**
   - **Buy (1)** when the close price is higher than the previous *Donchian High*.
   - **Sell (-1)** when the close price is lower than the previous *Donchian Low*.
@@ -14,7 +14,7 @@ The system detects breakouts of price above or below the Donchian channel and ex
   - **Buy:** `SL = Donchian Low − Spread`
   - **Sell:** `SL = Donchian High + Spread`
 
-### Version 2 — Single Position Donchian Breakout
+### Version 2 - Single Position Donchian Breakout
 Same breakout conditions as Version 1, but the system only keeps **one open position at a time**.  
 New entries are ignored until the current position is closed or reversed by an opposite breakout.
 
@@ -24,9 +24,9 @@ New entries are ignored until the current position is closed or reversed by an o
 - **Source:** Historical OHLC data retrieved directly from MetaTrader 5 (MT5) using the `MetaTrader5` Python API.
 - **Period:** Defined in `config.py` (`START_DATE`, `END_DATE`).
 - **Columns:**
-  - `bid_o, bid_h, bid_l, bid_c` — Bid OHLC prices  
-  - `ask_o, ask_h, ask_l, ask_c` — Ask OHLC prices  
-  - `real_spread` — Actual spread calculated per symbol
+  - `bid_o, bid_h, bid_l, bid_c` - Bid OHLC prices  
+  - `ask_o, ask_h, ask_l, ask_c` - Ask OHLC prices  
+  - `real_spread` - Actual spread calculated per symbol
 
 ### Data Retrieval
 Data is obtained through the `data_process.py` script:
